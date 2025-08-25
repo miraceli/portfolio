@@ -1,10 +1,18 @@
-import Home from './pages/Home/Home.tsx'
+import AboutSection from "./Pages/Home/sections/AboutSection/AboutSection"
+import HeroSection from "./Pages/Home/sections/HeroSection/HeroSection"
+import Navbar from "./components/Navbar/Navbar"
+// import ProjectsSection from "./Pages/Home/sections/ProjectsSection/ProjectsSection"
+import Footer from "./components/Footer/Footer"
 
-const App = () => {
+const App: React.FC = () => {
 
   return (
     <>
-      <Home />
+      <Navbar />
+      <HeroSection />
+      <AboutSection />
+      {/* <ProjectsSection /> */}
+      <Footer />
     </>
   )
 }
